@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Article | Priyanshu Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(17, 17, 17);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(35, 35, 35);
+            padding: 0 20px;
+        }
+
+        nav .left {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(112, 112, 112);
+            font-weight: bold;
+        }
+
+        main {
+            padding-top: 100px; /* To avoid content being hidden behind the fixed header */
+            padding: 20px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgb(35, 35, 35);
+            padding: 100px 30px;
+            border-radius: 10px;
+        }
+
+        .article-container h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .article-container img {
+            float: right;
+            margin: 0 0 20px 20px;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .article-container p {
+            text-align: justify;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: rgb(35, 35, 35);
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer ul li a:hover {
+            color: rgb(112, 112, 112);
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .footer-right {
+            text-align: center;
+            color: rgb(188, 188, 188);
+            padding: 12px 0px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .article-container img {
+                float: none;
+                display: block;
+                margin: 20px auto;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Priyanshu's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="article-container">
+          <h1>Is AI a Threat to Graphic Designers?</h1>
+          <img src="image2.png" alt="AI and Graphic Design">
+          <p>As artificial intelligence (AI) continues to evolve, its impact on various industries becomes more pronounced. The graphic design industry is no exception, with many professionals pondering whether AI poses a threat to their roles. Here's an exploration of the potential implications of AI for graphic designers:</p>
+          
+          <h2>The Potential Threats of AI:</h2>
+          <p>1. Job Displacement: One of the primary concerns is the possibility of AI replacing human designers. With AI algorithms becoming increasingly sophisticated, there is a fear that many design tasks could be automated, leading to job displacement.</p>
+          <p>2. Routine Task Automation: AI excels at automating repetitive and routine tasks, such as resizing images or generating basic layouts. This could reduce the demand for entry-level design roles.</p>
+          <p>3. Design Standardization: AI tools often rely on pre-existing patterns and data, which might lead to more standardized and less innovative designs, potentially stifling creativity.</p>
+          
+          <h2>AI as an Ally to Designers:</h2>
+          <p>1. Enhanced Creativity: While AI can handle routine tasks, it allows designers to focus more on creative and strategic aspects of their work, potentially enhancing overall creativity.</p>
+          <p>2. Efficiency and Productivity: AI tools can significantly boost productivity by speeding up the design process, allowing designers to complete projects faster and with greater efficiency.</p>
+          <p>3. New Opportunities: The integration of AI in design opens up new opportunities for designers to learn and work with advanced technologies, expanding their skill sets and career prospects.</p>
+          
+          <h2>Conclusion:</h2>
+          <p>While AI presents certain challenges to the graphic design industry, it also offers numerous opportunities for growth and innovation. Rather than viewing AI as a threat, designers can embrace it as a tool to enhance their work, focusing on areas where human creativity and intuition are irreplaceable. The future of graphic design will likely involve a harmonious blend of human and AI collaboration, leading to new heights of creativity and efficiency.</p>
+        </div>
+      </main>
+      
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Priyanshu's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+
+</html>

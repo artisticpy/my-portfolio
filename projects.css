@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(35, 35, 35);
+    padding: 0 20px;
+}
+
+nav .left {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(112, 112, 112);
+    font-weight: bold;
+}
+
+main {
+    padding-top: 100px; /* To avoid content being hidden behind the fixed header */
+}
+
+.projects-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center; /* Center the content */
+}
+
+.projects-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    background-color: rgb(35, 35, 35);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    text-align: justify;
+    word-wrap: break-word; /* Ensure long words break into multiple lines */
+    overflow-wrap: break-word; /* Ensure long words break into multiple lines */
+}
+
+.project {
+    background-color: rgb(35, 35, 35);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    text-align: center; /* Center the content */
+}
+
+.project h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.project img {
+    width: 80%; /* Reduce the image size */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project p {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    max-width: 800px;
+    text-align: justify;
+    word-wrap: break-word; /* Ensure long words break into multiple lines */
+    overflow-wrap: break-word; /* Ensure long words break into multiple lines */
+}
+
+
+.project .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(17, 17, 17);
+    border: 2px solid white;
+    border-radius: 90px; /* Add border radius */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px; /* Add margin to separate from the text */
+}
+
+.project .btn:hover {
+    background-color: rgb(112, 112, 112);
+}
+
+footer {
+    background-color: rgb(35, 35, 35);
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: rgb(112, 112, 112);
+}
+
+.footer>div {
+    width: 223px;
+}
+
+.footer-right {
+    text-align: center;
+    color: rgb(188, 188, 188);
+    padding: 12px 0px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .projects-section {
+        padding: 10px;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer>div {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}

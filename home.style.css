@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(17, 17, 17, 255);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(35, 35, 35);
+    padding: 0 20px;
+  }
+  
+  nav .left {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(112, 112, 112);
+    font-weight: bold;
+  }
+  
+  main {
+    padding-top: 100px; /* To avoid content being hidden behind the fixed header */
+  }
+  
+  main hr {
+    border: 0;
+    background: rgb(112, 112, 112);
+    height: 1.2px;
+    margin: 40px 84px;
+  }
+  
+  .left {
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    border: none;
+    text-decoration: none;
+    outline: none; /* Remove blue outline */
+  }
+  
+  .firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+    flex-wrap: wrap;
+  }
+  
+  .firstSection>div {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .leftSection {
+    font-size: 3rem;
+    margin: 100px 0;
+  }
+  
+  .leftSection .buttons {
+    padding: 50px 0;
+  }
+  
+  .leftSection .buttons a {
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .leftSection .btn {
+    padding: 12px;
+    background: rgb(17, 17, 17, 255);
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px; /* Add margin to separate buttons */
+  }
+  
+  .rightSection img {
+    width: 100%;
+    margin: 50px 0;
+  }
+  
+  .purple {
+    color: rgb(112, 112, 112);
+  }
+  
+  .text-gray {
+    color: rgb(112, 112, 112);
+  }
+  
+  #element {
+    color: rgb(112, 112, 112);
+  }
+  
+  .secondSection, .thirdSection, .fourthSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+  }
+  
+  .secondSection h1, .thirdSection h1, .fourthSection h1 {
+    font-size: 1.9rem;
+  }
+  
+  .secondSection .box, .thirdSection .box, .fourthSection .box {
+    background: white;
+    width: 80vm;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+  }
+  
+  .secondSection .vertical, .thirdSection .vertical, .fourthSection .vertical {
+    height: 93px;
+    width: 2px;
+    background-color: white;
+    margin: 0 180px;
+  }
+  
+  .image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+  }
+  
+  .vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 18px;
+  }
+  
+  .vertical-desc {
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 150px;
+    font-size: 12px;
+  }
+  
+  footer {
+    background-color: rgb(35, 35, 35);
+  }
+  
+  .footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+  }
+  
+  .footer ul {
+    list-style: none;
+  }
+  
+  .footer-second ul li a,
+  .footer-third ul li a {
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .footer-third ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-third ul li {
+    list-style: none;
+  }
+  
+  .footer-third ul li a img {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+  }
+  
+  .footer-third ul li a img:hover {
+    filter: invert(50%); /* Change the hover effect as needed */
+  }
+  
+  .footer>div {
+    width: 223px;
+  }
+  
+  .footer-right {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1068px) {
+    
+    
+    header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .header-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 10px;
+  }
+    nav {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .firstSection {
+      flex-direction: column;
+    }
+  
+    .firstSection>div {
+      width: 90%;
+    }
+  
+    .secondSection {
+      height: auto;
+      width: 90%;
+      margin-top: 0px;
+    }
+    .thirdSection, .fourthSection{
+      margin-top: 500px;
+      width: 90%;
+      height: auto;
+    }
+    .secondSection .vertical, .thirdSection .vertical, .fourthSection .vertical {
+      height: 93px;
+      width: 2px;
+      background-color: white;
+      margin: 0 50px;
+      
+
+    }
+    .vertical {
+    margin-bottom: 40px; /* Increase the gap between each vertical section */
+}
+
+.vertical .image-top {
+    margin-bottom: 20px; /* Increase the gap between the image and the title */
+}
+
+.vertical .vertical-title {
+    margin-bottom: 10px; /* Increase the gap between the title and the description */
+    font-weight: bold;
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin: -10px;
+    
+}
+
+.vertical .vertical-desc {
+    margin-bottom: 20px;
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: -10px; /* Increase the gap at the bottom of the description */
+}
+
+  .vertical-title{
+    width:100px;
+    margin-right: 400px;
+    gap: 500px;
+  }
+    .footer {
+      margin-top: 500px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer>div {
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
